@@ -35,7 +35,6 @@ def send_email():
     frommail = request.form['frommail']
     passwd = request.form['passwd']
     sendmail(to,subject,message,mailtype,hostname,port,frommail,passwd)
-    return 'hello world'
 
 if __name__ == '__main__':
     app.run(host='localhost', port=sys.argv[1])
